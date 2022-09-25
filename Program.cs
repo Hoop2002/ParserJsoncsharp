@@ -1,4 +1,4 @@
-﻿using ConsoleAppJsonParser.Models;
+
 
 namespace ConsoleAppJsonParser
 {
@@ -11,7 +11,7 @@ namespace ConsoleAppJsonParser
             var client = Newtonsoft.Json.JsonConvert.DeserializeObject<Models.Rootobject>(json);
 
            
-            for (int i = 0; i < 22; i++)
+            for (int i = 0; i < client.Clients.Length; i++)
             {
                 try
                 {
